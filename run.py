@@ -32,7 +32,7 @@ from PIL import Image
 import numpy as np
 from shapely.geometry import Point, box
 
-from landmark_HM_models import UNET
+from models import UNET
 from utils import *
 
 import random
