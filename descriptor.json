@@ -6,7 +6,7 @@
     },
     "description": "Training phase of the Landmark detection Deep Learning approach for Fish images",
     "schema-version": "cytomine-0.1",
-    "command-line": "python run.py [CYTOMINE_HOST] [CYTOMINE_PUBLIC_KEY] [CYTOMINE_PRIVATE_KEY] [CYTOMINE_ID_PROJECT] [CYTOMINE_ID_SOFTWARE] [CYTOMINE_ID_TERMS] [MODEL_EPOCHS] [MODEL_BATCH_SIZE] [MODEL_SIGMA] [MODEL_PROBABILITY_FUNCTION]",
+    "command-line": "python run.py [CYTOMINE_HOST] [CYTOMINE_PUBLIC_KEY] [CYTOMINE_PRIVATE_KEY] [CYTOMINE_ID_PROJECT] [CYTOMINE_ID_SOFTWARE] [MODEL_EPOCHS] [MODEL_BATCH_SIZE] [MODEL_SIGMA] [MODEL_PROBABILITY_FUNCTION]",
     "inputs": [
         {
         	"id": "cytomine_host",
@@ -53,18 +53,6 @@
 			"optional": false,
 			"type": "Number"
 		},
-        {
-            "id": "cytomine_id_terms",
-            "value-key": "[@ID]",
-            "command-line-flag": "--@id",
-            "name": "Cytomine terms IDs",
-            "set-by-server": false,
-            "optional": false,
-            "type": "ListDomain",
-            "uri": "/api/ontology/$currentOntology$/term.json",
-	        "uri-print-attribute": "name",
-	        "uri-sort-attribute": "name"
-        },
      
         {
             "id": "model_epochs",
