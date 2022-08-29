@@ -1,7 +1,7 @@
 {
-    "name": "S_Deep-Fish-Landmark-Detection-train",
+    "name": "Deep-Fish-Landmark-Detection-train",
     "container-image": {
-        "image": "navdeepkaushsish/s_Deep-Fish-Landmark-Detection-train",
+        "image": "navdeepkaushsish/Deep-Fish-Landmark-Detection-train",
         "type": "singularity"
     },
     "description": "Training phase of the Landmark detection Deep Learning approach for Fish images",
